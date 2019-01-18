@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <title>Solar system</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="sky" src="img/sky.jpg">
+        <img id="sun" src="img/sun.jpeg">
+        <img id="mercury" src="img/mercury.jpeg">
+        <img id="venus" src="img/venus.jpg">
+        <img id="eath" src="img/eath.jpeg">
+        <img id="moon" src="img/moon.jpeg">
+        <img id="mars" src="img/mars.jpeg">
+        <img id="jupiter" src="img/jupiter.jpg">
+        <img id="saturn" src="img/saturn.jpeg">
+        <img id="ring" src="img/ring.jpeg">
+        <img id="uranus" src="img/uran.jpeg">
+        <img id="neptun" src="img/neptun.jpeg">
+      </a-assets>
+      <!-- sun -->
+      <a-sphere position="0 0 0" radius="6" src="#sun">
+      </a-sphere>
+      <!-- Mercury -->
+      <a-sphere position="0">
+        <a-sphere src="#mercury" position="24 0 24" radius="2">
+          <a-animation atribute="rotation"
+            dur="5000"
+            to="0 360 0"
+            repeat="indefinite"
+            easing="linear"></a-animation>
+        </a-sphere>
+        <a-animation atribute="rotation"
+          dur="30000"
+          to="0 360 0"
+          repeat="indefinite"
+          easing="linear"></a-animation>
+      </a-sphere>
+      <!-- Venus -->
+      <a-sphere position="0">
+        <a-sphere src="#venus" position="32 0 32" radius="2">
+          <a-animation atribute="rotation"
+            dur="5000"
+            to="0 360 0"
+            repeat="indefinite"
+            easing="linear"></a-animation>
+        </a-sphere>
+        <a-animation atribute="rotation"
+          dur="35000"
+          to="0 360 0"
+          repeat="indefinite"
+          easing="linear"></a-animation>
+      </a-sphere>
+      <!-- Eath -->
+      <a-sphere position="0">
+        <a-sphere src="#eath" position="45 0 45" radius="2">
+          <a-animation atribute="rotation"
+            dur="24000"
+            to="0 360 0"
+            repeat="indefinite"
+            easing="linear"></a-animation>
+            <a-sphere src="#moon" position="5 0 4" radius="0.8">
+              <a-animation atribute="rotation"
+                dur="5000"
+                to="0 360 0"
+                repeat="indefinite"
+                easing="linear"></a-animation>
+            </a-sphere>
+        </a-sphere>
+        <a-animation atribute="rotation"
+          dur="41100"
+          to="0 360 0"
+          repeat="indefinite"
+          easing="linear"></a-animation>
+      </a-sphere>
+      <!-- Mars -->
+      <a-sphere position="0">
+        <a-sphere src="#mars" position="58 0 58" radius="2">
+          <a-animation atribute="rotation"
+            dur="5000"
+            to="0 360 0"
+            repeat="indefinite"
+            easing="linear"></a-animation>
+        </a-sphere>
+        <a-animation atribute="rotation"
+          dur="46100"
+          to="0 360 0"
+          repeat="indefinite"
+          easing="linear"></a-animation>
+      </a-sphere>
+      <!-- Jupiter -->
+      <a-sphere position="0">
+        <a-sphere src="#jupiter" position="70 0 70" radius="2">
+          <a-animation atribute="rotation"
+            dur="5000"
+            to="0 360 0"
+            repeat="indefinite"
+            easing="linear"></a-animation>
+        </a-sphere>
+        <a-animation atribute="rotation"
+          dur="52200"
+          to="0 360 0"
+          repeat="indefinite"
+          easing="linear"></a-animation>
+      </a-sphere>
+      <!-- Saturn -->
+      <a-sphere position="0">
+        <a-sphere src="#saturn" position="82 0 82" radius="2">
+          <a-animation atribute="rotation"
+            dur="5000"
+            to="0 360 0"
+            repeat="indefinite"
+            easing="linear"></a-animation>
+            <a-ring src="#ring" rotation="-95 5 0" radius-inner="3" radius-outer="5" depth="0.3">
+            </a-ring>
+        </a-sphere>
+        <a-animation atribute="rotation"
+          dur="57400"
+          to="0 360 0"
+          repeat="indefinite"
+          easing="linear"></a-animation>
+      </a-sphere>
+      <!-- uranus -->
+      <a-sphere position="0">
+        <a-sphere src="#uranus" position="90 0 92" radius="2">
+          <a-animation atribute="rotation"
+            dur="5000"
+            to="0 360 0"
+            repeat="indefinite"
+            easing="linear"></a-animation>
+        </a-sphere>
+        <a-animation atribute="rotation"
+          dur="62800"
+          to="0 360 0"
+          repeat="indefinite"
+          easing="linear"></a-animation>
+      </a-sphere>
+      <!-- Neptun -->
+      <a-sphere position="0">
+        <a-sphere src="#neptun" position="102 0 104" radius="2">
+          <a-animation atribute="rotation"
+            dur="5000"
+            to="0 360 0"
+            repeat="indefinite"
+            easing="linear"></a-animation>
+        </a-sphere>
+        <a-animation atribute="rotation"
+          dur="68400"
+          to="0 360 0"
+          repeat="indefinite"
+          easing="linear"></a-animation>
+      </a-sphere>
+      <!-- Fon -->
+      <!-- <a-sound src="https://cdn.glitch.com/02ca1423-e5ed-48fd-bda4-ec875b328e64%2Fkenji-kawai-log-off-avalon-ost_(mp3CC.com).mp3?1524135448600" autoplay="true"></a-sound> -->
+      <a-sky src="#sky"></a-sky>
+      <a-camera position="25 15 25"></a-camera>
+    </a-scene>
+  </body>
+</html>
